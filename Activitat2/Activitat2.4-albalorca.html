@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset= "utf-8"/>
+	<title>Activitat 2 exercici 3</title>
+</head>
+
+<body>
+	<button onclick="tresmil()">3000</button>
+	<br><br>
+	<button onclick="milio()">1500000</button>
+	<br><br>
+</body>
+
+<script>
+    function tresmil(){
+        var inici1= new Date();
+        var text1 = "Els números son: ";
+        for (i = 0; i < 3000; i++) {
+            document.write(i);
+        }
+        var fi1= new Date();
+        alert("El temps d'execució son "+(fi1-inici1)+" ms");
+    }
+
+    function milio(){
+        var inici2= new Date();
+        var text2 = "Els números son: ";
+        for (j = 0; j < 1500000; j++) {
+            document.write(j);  
+        }
+        var fi2= new Date();
+        alert("El temps d'execució son "+(fi2-inici2)+" ms");
+    }
+
+</script>
+
+<body>
+</body>
+</html>

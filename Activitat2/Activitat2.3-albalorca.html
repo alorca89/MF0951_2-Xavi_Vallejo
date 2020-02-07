@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset= "utf-8"/>
+	<title>Activitat 2 exercici 3</title>
+</head>
+
+<body>
+	<button onclick="conversor()">Conversor</button>
+	<br><br>
+	<button onclick="multiplica()">Multiplica</button>
+	<br><br>
+	<button onclick="graus()">Graus</button>
+	<br><br>
+	<button onclick="iva()">+IVA</button>
+	<br><br>
+	<button onclick="area()">Àrea</button>
+
+	<script>
+		/*conversor d'euros a dolars*/
+		function conversor(){
+		var n1 = parseInt (prompt("Escriu un número"));
+		var ctotal = parseFloat(n1*1.3);
+		alert("El valor de " +n1+ " euros en dolars és: "+ctotal);
+		}
+
+		/*multiplicació*/
+		function multiplica(){
+			var n3 = parseInt (prompt("Escriu un numero"));
+			var n4 = parseInt (prompt("Escriu un altre numero"));
+			var mtotal = (n3*n4);
+		alert("La multiplicació de "+ n3 + " i "+ n4 + " és: "+mtotal);
+		}
+
+		/*conversor a graus Fahrenheit*/
+		function graus(){
+		var n5 = parseInt (prompt("Escriu un número"));
+		var gtotal = parseFloat((n5*1.8)+32);
+		alert("El valor de " +n5+ " ºC a ºF és : "+gtotal);
+		}
+
+		/*preus més iva*/
+		function iva(){
+			var prod1 = parseInt (prompt("Quantes unitats?"))
+			var n6 = parseInt (prompt("Escriu un preu"));
+			var prod2 = parseInt (prompt("Quantes unitats?"))
+			var n7 = parseInt (prompt("Escriu un altre preu"));
+			var isuma = ((n6+n7)*prod1);
+			var itotal = parseFloat (isuma*1.21);
+		alert("El preu total és " +isuma+ " euros");
+		alert("El preu total amb IVA és " +itotal+ " euros");
+		}
+
+		/*calcular l'àrea d'una circumferència*/
+		function area(){
+		var n8 = parseInt (prompt("Escriu un número"));
+		var atotal = parseFloat (3.14*n8*n8);
+		alert ("Una circumferència de radi " +n8+ " cm tindria una àrea de " +atotal+ " cm2");
+		}
+
+	</script>
+</body>
+</html>
+
+		
